@@ -1,0 +1,288 @@
+@import "normalize.css";
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(161, 207, 207);
+}
+
+.body-noticias {
+    background-color:rgb(118, 135, 148);
+
+}
+
+header {
+    color: RGB(255,255,255);
+    padding: 5px;
+    text-align: center;
+    background: url("../img/imagen-cabecera.jpg"); 
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size:  2rem;
+    background-color: rgb(75, 75, 175, 0.75);
+    width: 500px;
+    padding: 10px 0px 10px 0px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+main h1 {
+    font-size:  2.5rem;
+    text-decoration: underline;
+}
+
+.h1-estacion {
+    width: 50%;
+    margin-left: 25%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent; 
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;                  /* Para que no salgan los hiperenlaces subrayados*/
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    width: 15%;
+    margin: 10, 100, 10, 100;
+}
+
+main nav a {
+    width: auto;
+}
+
+.main-inicio {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 125%;
+}
+
+.main-contactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline: 100px;
+}
+
+.main-estaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.main-estacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div-estaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div-estacion {
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 5%;
+    font-size: 1.1rem;
+}
+
+.article-estaciones {
+    display: flex;
+    background-color: rgb(56, 104, 171);
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    margin-block: 20px;
+}
+
+.img-estacion {
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-right: 30px;
+    align-self: center;
+}
+
+.img-en-construccion {
+    height: 500px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+video {
+    width: 520px;
+    height: 250px;
+    align-self: center;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 15px;
+
+}
+
+.div-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.img-estaciones {
+    width: 250px;
+    height: 175px;
+    border-radius: 15px;
+    border: 1px solid black;
+    align-self: center;
+}
+
+.a-estaciones {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 2px 5px 2px 5px;
+    margin-left: 20px;
+}
+
+.p-contactanos {
+    width: 25%;
+    text-align: center;
+}
+
+.article-noticias {
+    display: flex;
+    background-color: rgb(56, 104, 171);
+    margin: 20px 0px 20px 0px;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+ }
+
+.img-noticias {
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+article div {
+    margin-inline: 30px;
+}
+
+aside {
+    background-color: blueviolet;
+}
+
+footer {
+    height: 100px;
+    background-color:rgb(152, 128, 152);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    padding: 1rem;
+    text-align: center;
+    width: 30rem;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+/* Código generado por CHATGPT y después adaptado por mí. Lo que le he pedido es lo siguiente:
+
+    Código html para crear un formulario de contacto para enviar comentarios por email, con los elementos 
+    del formulario en vertical y con una separación de 10px entre ellos
+*/
+
+/* El código que ha generado CHATGPT (HTML Y CSS) es el siguiente:
+
+        CODIGO HTML
+        -----------
+    <form action="enviar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+        CODIGO CSS
+        -----------
+    form { max-width: 400px;     margin: 0 auto; }
+    label { margin-bottom: 5px; }
+    input, textarea { width: 100%;    padding: 8px;    margin-bottom: 10px;    box-sizing: border-box; }
+    input[type="submit"] { background-color: #4caf50;    color: white;    cursor: pointer; }
+    input[type="submit"]:hover { background-color: #45a049; }
+*/
+
+
+form {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input, textarea {
+    width: 75%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 7rem;
+  }
+
+  input[type="submit"] {
+    background-color: #251a78;
+    width: 50%;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50px;;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #4c4caf;
+    color: black;
+    margin-bottom: 50px;
+ }
